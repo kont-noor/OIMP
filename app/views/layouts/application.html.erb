@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta content="width=320,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+
+    <title>Lucid Dream TribalSketch</title>
+	<style type="text/css">
+		body{margin:0; padding:0;}
+		#container {position: absolute; top:50%; left:50%;}
+		#cappuccino-content {width:800px; text-align:center; margin-left: -400px; height:50px; margin-top:-25px; line-height: 50px;}
+		#cappuccino-content {font-family: "Helvetica", "Arial", sans-serif; font-size: 18px; color: black; text-shadow: 0px 1px 0px white; }
+		#loadgraphic {margin-right: 0.2em; margin-bottom:-2px;}
+	</style>
+	<script type="text/javascript">
+		thumb = [];
+		//OBJJ_MAIN_FILE = "/js/main.j";
+		OBJJ_MAIN_FILE = "/js/Build/Debug/ODT/main.j";		
+		///init application global parameters
+		_style = {"width":400,"height":400};
+		_lang = {"name": "en"};
+	</script>
+	<!--<script type="text/javascript" src="/js/Frameworks/Objective-J/Objective-J.js" charset="UTF-8"></script>-->
+	<script type="text/javascript" src="/js/Build/Debug/ODT/Frameworks/Objective-J/Objective-J.js" charset="UTF-8"></script>
+
+
+	<!--[if lt IE 7]>
+		<style type="text/css">
+			#container { position: relative; top: 50%; }
+			#content { position: relative;}
+		</style>
+	<![endif]-->
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

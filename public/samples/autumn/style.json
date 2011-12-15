@@ -1,0 +1,35 @@
+{
+	"name": "autumn",
+	"width": 500,
+	"height": 500,
+	"thumb": "thumb.png",
+	"elements": [
+		{
+			"type": "image",
+			"file": "frame.png",
+			"rotation": -5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"scaleX": 1,
+			"scaleY": 1
+		},
+		{
+			"type": "image",
+			"file": "photo.jpg",
+			"rotation": 0,
+			"offsetX": 0,
+			"offsetY": 0,
+			"scaleX": 1.2,
+			"scaleY": 0.8
+		},
+		{
+			"type": "image",
+			"file": "frame.png",
+			"rotation": 5,
+			"offsetX": 30,
+			"offsetY": 15,
+			"scaleX": 2,
+			"scaleY": 1
+		},
+	]
+}

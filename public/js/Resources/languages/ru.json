@@ -1,0 +1,18 @@
+﻿{
+	"my_photos_panel":		"Фотографии",
+	"upload_images_panel":	"Загрузить изображение",
+	"upload_images_button1":"Обзор",
+	"upload_images_button2":"Загрузка",
+	"layer_attr_panel":		"Атрибуты слоя",
+	"degree":				"град",
+	"offset_value":			"пт",
+	"attr_save":			"Сохранить",
+	"db_click_edit":		"Кликните по фотографии дважды",
+	"photoinspector_panel": "Фотоинспектор",
+	"frame_styles_panel":	"Рамки",
+	"menu_file":			"Файл",
+	"menu_edit":			"Правка",
+	"menu_view":			"Вид",
+	"menu_upload":			"Загрузка",
+	"server_indicator":		"Сервер"
+}

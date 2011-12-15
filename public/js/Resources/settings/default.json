@@ -1,0 +1,23 @@
+﻿/**
+ * ODT default settings file
+ */
+{
+	"name":					"default",
+	"commonScale":			1,
+	///photos and product panels
+	"sidebarWidth":			150,
+	"sidebarPosX":			10,
+	"sidebarPosY":			40,
+	"sidebarMarginB":		120,
+	"sidebarPaddingB":		20,
+	"sidebarHasScroller":	YES,
+	"sidebarIsClosable":	NO,
+	"sidebarIsResizable":	YES,
+	"thumbSize":			100,
+	///toolbar
+	"toolbarSize":			70,
+	"toolbarItemSize":		32,
+	///selection tool
+	"finger":				10,
+	"rotationRadius":		40
+}

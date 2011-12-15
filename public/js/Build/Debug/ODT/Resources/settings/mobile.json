@@ -1,0 +1,23 @@
+﻿/**
+ * ODT mobile devices settings file
+ */
+{
+	"name":					"mobile",
+	"commonScale":			0.3325,
+	///photos and product panels
+	"sidebarWidth":			65,
+	"sidebarPosX":			0,
+	"sidebarPosY":			20,
+	"sidebarMarginB":		0,
+	"sidebarPaddingB":		0,
+	"sidebarHasScroller":	YES,
+	"sidebarIsClosable":	NO,
+	"sidebarIsResizable":	NO,
+	"thumbSize":			55,
+	///toolbar
+	"toolbarSize":			50,
+	"toolbarItemSize":		28,
+	///selection tool
+	"finger":				20,
+	"rotationRadius":		30
+}

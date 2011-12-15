@@ -1,0 +1,18 @@
+﻿{
+	"my_photos_panel":		"My Photos",
+	"upload_images_panel":	"Upload Images",
+	"upload_images_button1":"Browse",
+	"upload_images_button2":"Uploading",
+	"layer_attr_panel":		"Layer Attributes",
+	"degree":				"degrees",
+	"offset_value":			"pt",
+	"attr_save":			"Save",
+	"db_click_edit":		"Double Click to Edit Photo",
+	"photoinspector_panel":	"Photo Inspector",
+	"frame_styles_panel":	"Frame Styles",
+	"menu_file":			"File",
+	"menu_edit":			"Edit",
+	"menu_view":			"View",
+	"menu_upload":			"Upload",
+	"server_indicator":		"Server Activity"
+}

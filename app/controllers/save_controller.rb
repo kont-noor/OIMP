@@ -7,7 +7,12 @@ class SaveController < ApplicationController
     attributes = params[:attributes]
 
     #processing the parameters
-    tmp_image_name = (attributes[:imageName].empty?) ? "#{::Rails.root.to_s}/public/samples/spring/frame.png" : "#{::Rails.root.to_s}/public/images/uploaded_images/"+attributes[:imageName].to_s
+    tmp_image_name =  if attributes[:imageName].empty?
+                        "#{::Rails.root.to_s}/public/samples/spring/frame.png"
+                      else
+                        "#{::Rails.root.to_s}/public" + attributes[:imageName].to_s # "#{::Rails.root.to_s}/public/images/uploaded_images" +
+                      end
+
     tmp_image_name.sub!('pane_', 'orig_')
     thumb_image_name = tmp_image_name.sub('orig_', 'thumb_')
 
@@ -22,10 +27,10 @@ class SaveController < ApplicationController
     frame_width    = (attributes[:styleWidth].empty?)  ? 400 : attributes[:styleWidth]
     frame_height   = (attributes[:styleHeight].empty?) ? 400 : attributes[:styleHeight]
     zoom           = 4
- 
+
     scale          = (attributes[:scale].empty?) ? 1 : attributes[:scale]
     scale          = scale.to_i * zoom * thumb_image.rows / image.rows
- 
+
     content_width  = image.rows * scale.to_i
     content_height = image.columns * scale.to_i
 
@@ -46,13 +51,13 @@ class SaveController < ApplicationController
     top            = (dy + margin_top).to_i
     left           = (dx + margin_left).to_i
 
-    #write into a file 
+    #write into a file
     fo_name = ''
     8.times{fo_name  << (65 + rand(25)).chr}
     fo_name = 'file' + fo_name
 
     file = File.new("#{::Rails.root.to_s}/tmp/fo/" + fo_name + '.fo', "w+")
-        file.puts <<EOF
+    file.puts <<EOF
         <?xml version="1.0" encoding="ISO-8859-1"?>
 
 	<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fox="http://xmlgraphics.apache.org/fop/extensions">

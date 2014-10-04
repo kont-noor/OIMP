@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '4.1.6'
 gem "thin"
 gem "heroku"
 
@@ -12,14 +12,10 @@ gem 'rmagick', :require => 'RMagick'
 group :production do
   gem 'pg'
 end
+
 group :development, :test do
-#gem 'sqlite3'
   gem 'sqlite3-ruby', :require => 'sqlite3'
-  if RUBY_VERSION =~ /1\.9/
-    gem 'ruby-debug19'
-  else
-    gem 'ruby-debug'
-  end
+  gem 'pry'
 end
 
 
